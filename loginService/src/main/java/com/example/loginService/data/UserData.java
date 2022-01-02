@@ -6,13 +6,17 @@ import java.util.ArrayList;
 
 public class UserData {
 
-    private static ArrayList <UserDTO> userList;
+    private static UserData userData;
 
-    private UserData(){}
+    private ArrayList <UserDTO> userList;
+
+    private UserData(){
+        userList = new ArrayList<>();
+    }
 
     public static UserData getInstance() {
 
-        userList = new ArrayList<UserDTO>();
+        userData = new UserData();
         return null;
     }
 
